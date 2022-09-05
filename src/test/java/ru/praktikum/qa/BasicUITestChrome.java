@@ -21,10 +21,10 @@ public abstract class BasicUITestChrome { // абстрактный класс �
     }
 
 
-  //  @AfterClass
-    //public static void teardown() {
-        // Закрой браузер
-      //  webDriver.quit();
-    //}
+   @AfterClass
+   public static void teardown() {
+       // Закрой браузер
+     webDriver.quit();
+   }
 
 }

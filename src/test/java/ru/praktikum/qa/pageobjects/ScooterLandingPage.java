@@ -23,7 +23,11 @@ public class ScooterLandingPage extends MainAbstratPage { // пейджобже�
         String text = driver.findElement(By.id(Constants.accordionPanelNamePrefix+accordionIndex)).getText(); // хватаем описание, если оно появилось
         return text;
     }
-    public void clickOrderButtonTop (){
+    public void clickOrderButtonTop ()
+    {
+        new WebDriverWait(driver, 5)
+                .until(ExpectedConditions.visibilityOfElementLocated(orderButtonTop));
         driver.findElement(orderButtonTop).click();
+
     }
 }

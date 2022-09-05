@@ -12,44 +12,17 @@ public class QuestionsListTestFirefox extends BasicUITestFirefox{
         assertEquals ("Ошибка",ExpectedResult.questions[index],text); // проверка пришедшего описания на соответствие массиву Ожидаемых результатов
     }
 
-    @Test
-    public void accordionElementShouldHaveDescription0() {
+    @Test // перебор вопросов (открываем все вопросы, сравниваем описания)
+    public void accordionElementShouldHaveDescriptionAll() {
+        for (int i = 0; i <= 7; i++) {
+            accordionElementShouldHaveDescription(i);
+        }
+    }
+    @Test // проверяем, что можно открыть предыдущий вопрос, после выбора следущего
+    public void accordionElementShouldHaveDescriptionPrevious (){
         accordionElementShouldHaveDescription(0);
-    }
-
-    @Test
-    public void accordionElementShouldHaveDescription1() {
         accordionElementShouldHaveDescription(1);
-    }
-
-    @Test
-    public void accordionElementShouldHaveDescription2() {
-        accordionElementShouldHaveDescription(2);
-    }
-
-    @Test
-    public void accordionElementShouldHaveDescription3() {
-        accordionElementShouldHaveDescription(3);
-    }
-
-    @Test
-    public void accordionElementShouldHaveDescription4() {
-        accordionElementShouldHaveDescription(4);
-    }
-
-    @Test
-    public void accordionElementShouldHaveDescription5() {
-        accordionElementShouldHaveDescription(5);
-    }
-
-    @Test
-    public void accordionElementShouldHaveDescription6() {
-        accordionElementShouldHaveDescription(6);
-    }
-
-    @Test
-    public void accordionElementShouldHaveDescription7() {
-        accordionElementShouldHaveDescription(7);
+        accordionElementShouldHaveDescription(0);
     }
 }
 

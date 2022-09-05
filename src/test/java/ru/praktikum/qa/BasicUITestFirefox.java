@@ -21,10 +21,10 @@ public abstract class BasicUITestFirefox{ // абстрактный класс �
     }
 
 
-    //  @AfterClass
-    //public static void teardown() {
+     @AfterClass
+    public static void teardown() {
     // Закрой браузер
-    //  webDriver.quit();
-    //}
+      webDriver.quit();
+    }
 
 }
