@@ -20,7 +20,6 @@ public abstract class BasicUITestChrome { // абстрактный класс �
         webDriver.findElement(By.className(Constants.cookieRemoveButtonClassName)).click(); // закрываем попап с куки
     }
 
-
    @AfterClass
    public static void teardown() {
        // Закрой браузер
