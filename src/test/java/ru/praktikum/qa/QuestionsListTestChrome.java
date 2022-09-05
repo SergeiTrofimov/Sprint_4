@@ -1,8 +1,6 @@
 package ru.praktikum.qa;
 
 import org.junit.*;
-import org.openqa.selenium.By;
-import ru.Constants;
 import ru.praktikum.qa.pageobjects.ScooterLandingPage;
 import static org.junit.Assert.*;
 

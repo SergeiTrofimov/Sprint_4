@@ -4,7 +4,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.openqa.selenium.By;
 import ru.Constants;
 import ru.praktikum.qa.pageobjects.OrderPage;
 import ru.praktikum.qa.pageobjects.ScooterLandingPage;
