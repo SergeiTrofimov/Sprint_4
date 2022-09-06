@@ -35,7 +35,6 @@ public class OrderScooterTestFirefox extends BasicUITestFirefox {
         this.rentDurationIndex = rentDurationIndex;
     }
 
-
     @Parameterized.Parameters(name = "Тестовые данные: {0},{1},{3}")
     public static Object[][] inputText() {
         // тестовые данные {Имя(строка),Фамилия(строка),Адресс(строка), Телефонный номер (строка), Дата доставки(строка), Комментарий (строка), Индекс станции метро(целое), Индекс продолжительности аренды (целое)}
